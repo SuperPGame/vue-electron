@@ -1,24 +1,31 @@
-# vue-electron
+### Build your vue && electron project
 
-## Project setup
-```
-yarn install
-```
+#### 1. Install vue-vli
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+```shell
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+https://cli.vuejs.org/guide/installation.html
+
+#### 2. Create project
+
+```shell
+vue create <your project name>
 ```
 
-### Lints and fixes files
-```
-yarn lint
+#### 3. Add Electron
+
+```shell
+vue add electron-builder
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/
+
+#### 4. Start your App
+
+```shell
+yarn electron:serve # yarn electron:build (for build)
+```
